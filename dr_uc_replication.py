@@ -227,9 +227,9 @@ def main():
     print("=" * 70)
 
     # Collect runtime inputs
-    primary_profile = "primary-ws" #input("\nDatabricks CLI profile for PRIMARY: ").strip()
-    secondary_profile = "secondary-ws" #input("Databricks CLI profile for SECONDARY: ").strip()
-    catalog_name = "primary-catalog" #input("Catalog name to setup: ").strip()
+    primary_profile = input("\nDatabricks CLI profile for PRIMARY: ").strip()
+    secondary_profile = input("Databricks CLI profile for SECONDARY: ").strip()
+    catalog_name = input("Catalog name to setup: ").strip()
 
     if not all([primary_profile, secondary_profile, catalog_name]):
         print("\n[ERROR] All inputs are required.")
